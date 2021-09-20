@@ -4,35 +4,17 @@ public class Cadastro {
 private String nome, cpf;
 
 
-public Cadastro  (String valorNome, String valorCpf){
-    nome = valorNome;
-    cpf = valorCpf;
 
-}
-
-public void setNome(String valorNome) {
-        nome = valorNome;
+public void setNome(String nome) {
+        this.nome = nome;
     }
     public String getNome() {
-        return nome;
+        return this.nome;
     }
-    public void setCpf(String valorCpf) {
-        cpf = valorCpf;
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
     public String getCpf() {
-        return cpf;
-    }
-
-    public String toString() {
-        return this.nome + "\n" + 
-               this.cpf + "\n" + 
-               this.parcelas + "\n" +
-               this.valor + "\n" +
-               this.opcao + "\n" +
-               this.pular + "\n" +
-               this.estado + "\n" +
-               this.frete + "\n" +
-               this.resultado;
-
+        return this.cpf;
     }
 }

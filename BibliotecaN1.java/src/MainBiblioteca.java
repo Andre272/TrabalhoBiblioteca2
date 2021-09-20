@@ -1,5 +1,5 @@
 import  java.util.Scanner ;
-public  class  BibliotecaMain{   
+public  class  MainBiblioteca{   
 public  static  void  main ( String [] args ) {
 
         Scanner leia =  new  Scanner ( System.in );
@@ -33,16 +33,16 @@ public  static  void  main ( String [] args ) {
         System.out.println ( " =========================== " );
 
         System.out.println ( " Nome: " );
-        b1.setNome = (leia.nextLine());
+        b1.setNome  (leia.nextLine());
 
         System.out.println ( " CPF: " );
-        b1.setCpf = (leia.nextLine());
+        b1.setCpf  (leia.nextLine());
 
         System.out.println ( " Estado: " );
-        b2.setEstado = (leia.nextLine());
+        b2.setEstado  (leia.nextLine());
 
         System.out.println ( " Telefone: " );
-        b1.setNome = (leia.nextLine());
+        b1.setNome  (leia.nextLine());
 
         System.out.println ( " Cadastro efetuado com sucesso, efetue o login e prossiga á suas compras. " );
         System.out.println ( " ======================== " );
@@ -51,9 +51,9 @@ public  static  void  main ( String [] args ) {
         System.out.println ( " LOGIN: " );
         
         System.out.println ( " Nome: " );
-        b1.getNome = (leia.nextLine());
+        b1.getNome (leia.nextLine());
         System.out.println( " CPF: ");
-        b1.getCpf = (leia.nextLine());
+        b1.getCpf  (leia.nextLine());
         System.out.println ( " Login efetuado com sucesso! " );
         System.out.println ( " ======================== " );
         
@@ -177,28 +177,28 @@ public  static  void  main ( String [] args ) {
         System.out.println ( " O valor á ser pago no boleto avista é de: " + resultado);    
         System.out.println ( " Clique em imprimir e efetue o pagamento do boleto na Agência ou Loterica mais próxima " );    
       
-      } else  if (opcao ==  '1' ) {
+      } else  if (opcao ==  '1' ) {     
         System.out.println ( " Prossiga com seu pagamento. " );
         System.out.println( " PARCELAMENTO: " );
         System.out.println ( " Insira o número de parcelas: " );
         System.out.println ( " A - 3x \n B - 5x \n C - 8x \n D - 12x \n " );
         System.out.println ( " Digite aqui: " );
-        b2.setParcelas = (leia.nextInt);
+        b2.setParcelas (leia.nextInt());
       
-      if (parcelas == 3 ) {
+      if (b2.getParcelas() == 3 ){
       resultado = (resultado / 3 );
       System.out.println ( " Ficou 3 vezes de: " + resultado);
       }  
 
-      else  if (parcelas == 5 ) {
+      else  if (b2.getParcelas() == 5 ) {
       resultado = (resultado / 5 );
       System.out.println ( " Ficou 5 vezes de: " + resultado);
 }
-      else  if (parcelas == 8 ) {
+      else  if (b2.getParcelas() == 8 ) {
       resultado = (resultado / 8 );
       System.out.println ( " Ficou 8 vezes de: " + resultado);
 }
-      else  if (parcelas == 12 ) {
+      else  if (b2.getParcelas() == 12 ) {
       resultado = (resultado / 12 );
       System.out.println ( " Ficou 12 vezes de: " + resultado);
 
@@ -206,3 +206,4 @@ public  static  void  main ( String [] args ) {
       } 
    }
 }
+
